@@ -4,7 +4,7 @@ class Bookmark
       "http://www.makersacademy.com",
       "http://www.destroyallsoftware.com",
       "http://www.neopets.com",
-      "http://www.makersacademy.com"
+      "https://youtu.be/rI5cu3G5oXk"
      ]
   end
 end
