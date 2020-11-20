@@ -17,4 +17,8 @@ I would like to see a list of bookmarks
 As a user
 So that I can add save a website to look at later
 I would like to add a new bookmark
+
+As a user
+So that I can remove a bookmark I have saved
+I would like to delete a bookmark
 ```
