@@ -5,11 +5,11 @@ feature 'Add bookmark' do
     con.exec "INSERT INTO bookmarks (url) VALUES('http://www.google.com')"
     con.exec "INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com')"
 
-    visit('/')
-    click_button('bookmarks')
-    click_button('add')
-    fill_in('url', with: 'https://airtable.com')
+    visit('/bookmarks/add')
+    fill_in('url', with: 'http://www.testbookmark.com')
+    fill_in('title', with: 'Test Bookmark')
     click_button('Submit')
-    expect(page).to have_content('https://airtable.com')
+
+    expect(page).to have_link('Test Bookmark', href: 'http://www.testbookmark.com')
   end
 end
